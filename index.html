@@ -68,12 +68,15 @@
             <h1 class="countdown">3</h1>
         </div>
         <!-- Game Page --> 
-        <div class="card" id="game-page">
+        <div class="card" id="game-page" hidden>
             <!-- Item Container -->
-            <div class="selected-item"></div>
-            <div class="item-container">
-        
+            <div class="item-container"></div>
+            <!-- Right/Wrong Buttons -->
+            <div class="item-footer">
+                <button class="wrong" onclick="select(false)">Wrong</button>
+                <button class="right" onclick="select(true)">Right</button>
             </div>
+        </div> 
     </div>
     <!-- Script -->
     <script src="shuffle.js"></script>
